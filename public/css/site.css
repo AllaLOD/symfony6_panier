@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap'); 
+
+h3, h2, h4, h5, p {
+    font-family: 'Merriweather', serif;
+}
+
+.home, .connexion {
+    background-image: url('../uploads/logo/image_home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: 0;
+    
+}
+
+
+/* page index.html.twig */
+.cadre_home {
+    position: relative;
+    top: 20vh;
+}
+
+.cadre_login {
+    position: relative;
+    top: 10vh;
+}
+
+#logo_img {
+    border-radius: 50%;
+}
+
+
+img {
+    border-radius: 5%;      
+}
+
+.nav_header, .nav_footer {
+    background-color: #CAFFBF;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* page products.html.twig */
+.cadre_produit {
+    background-color: #FFD6A5;
+    border-radius: 5%;  
+}
+
+
+/* page details.html.twig */
+
+#details {
+    color: #1a620b;
+    text-decoration: none;
+}
+
+/* page cart.html.twig , details, profil, contact ... */
+
+.panier, .details, .profil, .password {
+    height: 80vh;
+}
+
+.btn_valider {
+    background-color: #FFD6A5;
+    border-radius: 50;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+}
+
+.btn_continuer {
+    background-color: #CAFFBF;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    border-color: #1a620b;
+    
+}
+
+/* page cart_details.html.twig */
+.detailsOrder {
+    height: 80vh;
+}
+
+/* page contact */
+.btn_contact, .btn_connexion {
+    background-color: #CAFFBF;
+    border: #CAFFBF;
+    border-radius: 25px;
+    padding: 0.7em;
+}
+
+.btn_register {
+    background-color: #FFD6A5;
+    border: #FFD6A5;
+    border-radius: 25px;
+    padding: 0.7em;
+}
+
+.bi-emoji-wink {
+    font-size: 1.5em;
+}
+
