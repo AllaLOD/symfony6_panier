@@ -55,7 +55,7 @@
     <a href="{{ path('produits')}}" class="btn_continuer">Continuer les achats <i class="bi bi-arrow-right"></i></a>
             
         {% if not app.user %}
-        <div class="d-flex justify-content-around">
+        <div class="d-flex justify-content-around btn_cart">
             <a class="btn_continuer" href="{{ path('app_login')}}">Pour valider : connectez-vous</a>
             <p class="mx-3">ou</p>  
             <a class="btn_continuer" href="{{ path('app_register')}}">Inscrivez-vous</a> 

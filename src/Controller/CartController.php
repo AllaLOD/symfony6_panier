@@ -160,7 +160,7 @@ class CartController extends AbstractController
     }
 
     // affichage de détails de commande
-    #[Route('cart/cart_details/{id}', name: 'cart_details')]
+    #[Route('/cart_details/{id}', name: 'cart_details', methods: ['GET'])]
     public function detailsCommande($id, OrdersDetailsRepository $detailsRepo, OrdersRepository $orderRepo)
     {
         $order = $orderRepo->find($id);
