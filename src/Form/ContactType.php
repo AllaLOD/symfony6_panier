@@ -22,7 +22,8 @@ class ContactType extends AbstractType
                 'choices' => [
                     'Madame' => 'madame',
                     'Monsieur' => 'monsieur'
-                ]
+                ],
+                'label' => 'Civilité'
             ])
             ->add('nom', TextType::class, [
                 'attr' => [

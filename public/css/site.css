@@ -56,8 +56,8 @@ img {
 
 /* page cart.html.twig , contact ... */
 
-.panier, .password {
-    height: 80vh;
+.panier, .details, .password, .profil {
+    min-height: 80vh;
 }
 
 .btn_valider {
@@ -80,18 +80,18 @@ img {
 
 /* page cart_details.html.twig */
 .detailsOrder {
-    height: 80vh;
+    min-height: 80vh;
 }
 
-/* page contact */
-.btn_contact, .btn_connexion {
+/* page connexion */
+.btn_connexion {
     background-color: #CAFFBF;
     border: #CAFFBF;
     border-radius: 25px;
     padding: 0.7em;
 }
 
-.btn_register {
+.btn_register, .btn_contact {
     background-color: #FFD6A5;
     border: #FFD6A5;
     border-radius: 25px;
@@ -111,19 +111,12 @@ img {
 
     .details {
         height: 60vh;
-    }
+    } 
 }
 
-/* responsive pour grande ecranes */
-@media screen and (min-width: 900px)
-{
-    .details, .profil {
-        height: 90vh;
-    }
-        
-    
+
 
     
 
-}
+
 

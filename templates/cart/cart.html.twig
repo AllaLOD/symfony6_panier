@@ -24,9 +24,9 @@
         {% for item in items %}
         <tr>
             <td>{{ item.product.name}}</td>
-            <td>{{ item.product.price}} €</td>
+            <td>{{ item.product.price}}€</td>
             <td>{{ item.quantity }}</td>
-            <td>{{ item.product.price * item.quantity}} €</td>
+            <td>{{ item.product.price * item.quantity}}€</td>
             <td>
                 <a href="{{ path('cart_add', {id: item.product.id})}}" class="btn btn">
                             <i class="bi bi-plus-lg"></i>
@@ -52,7 +52,7 @@
     </table>
 </div>
 <div class="d-flex flex-wrap justify-content-around my-5">
-    <a href="{{ path('produits')}}" class="btn_continuer">Continuer les achats <i class="bi bi-arrow-right"></i></a>
+    <a href="{{ path('produits')}}" class="btn_continuer my-2">Continuer les achats <i class="bi bi-arrow-right"></i></a>
             
         {% if not app.user %}
         <div class="d-flex justify-content-around btn_cart">
@@ -61,13 +61,13 @@
             <a class="btn_continuer" href="{{ path('app_register')}}">Inscrivez-vous</a> 
         </div>
         {% else %}
-            <a href="{{ path('commande')}}" class="btn_valider">Validez votre commande !</a>
+            <a href="{{ path('commande')}}" class="btn_valider my-2">Validez votre commande !</a>
 
         {% endif %}
 </div>       
 {% else %}
 
-        <h3 class="text-center my-5">Votre panier est vide !</h3>
+        <h3 class="text-center position-absolute top-50 start-50 translate-middle">Votre panier est vide !</h3>
         
 {% endif %}
 </div>
