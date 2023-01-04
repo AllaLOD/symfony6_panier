@@ -53,7 +53,7 @@ class RegistrationFormType extends AbstractType
                 'attr' => [
                     'class' => 'form-control'
                 ],
-                'label' => 'Prenom',
+                'label' => 'Prénom',
                 'constraints' => [
                     new Regex([
                         'pattern' => '/^[\p{Latin}\p{N}\s*\'\-\ ]+$/u',
